@@ -6,5 +6,12 @@ How To Install Metasploit Termux Ubuntu
   ```
   apt update && apt upgrade -y
   ```
-- **Analisis Kerentanan**: Memberikan kemampuan untuk mengidentifikasi dan mengevaluasi area-area yang rentan terhadap serangan dari berbagai sudut pandang.
-- **Peningkatan Keamanan**: Memberikan wawasan yang mendalam tentang area-area yang perlu diperbaiki atau ditingkatkan untuk meningkatkan keamanan infrastruktur IT.
+- **install distro ubuntu**: Langkah berikut nya install proot dan proot-distro untuk menginstall ubuntu pada termux, tidak memerlukan root akses.
+  ```
+  apt install proot proot-distro;proot-distro install ubuntu
+  ```
+- **membuat script login ubuntu**: Langkah berikut nya, setelah menginstall ubuntu pada termux, kita bisa login ke ubuntu dengan perintah proot-distro login ubuntu atau kita bisa membuat script yang sederhana untuk login ke ubuntu silahkan coppy paste.
+  ```
+  echo "proot-distro login ubuntu" > $PREFIX/bin/ubuntu
+  ```
+  lalu ketik perintah ubuntu, untuk login ke ubuntu
