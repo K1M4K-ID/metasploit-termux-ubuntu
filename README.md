@@ -25,11 +25,15 @@ How To Install Metasploit Termux Ubuntu
   chmod 755 msfinstall && \
   ./msfinstall
   ```
-- **install zipalign**: Langkah berikut nya install zipalign
+- **install zipalign**: Langkah berikut nya install zipalign, NOTE! jika kamu sudah pernah install zipalign dan error maka copy paste bagian ini
   ```
-  apt-get --purge remove zipalign #jika sudah pernah install zipalign kalau belum lewati bagian ini
+  apt-get --purge remove zipalign
 
   git clone https://github.com/K1M4K-ID/fix-zipalign;cd fix-zipalign;chmod +x fix-zipalign.sh;bash fix-zipalign.sh
+  ```
+- **install apktool, apksigner**: Langkah berikut nya install apktool dan apksigner
+  ```
+  apt install apktool apksigner -y
   ```
 
   ## selesai
