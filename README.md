@@ -15,3 +15,23 @@ How To Install Metasploit Termux Ubuntu
   echo "proot-distro login ubuntu" > $PREFIX/bin/ubuntu
   ```
   lalu ketik perintah ubuntu, untuk login ke ubuntu
+- **update & upgrade**: Langkah berikut nya setelah login ke dalam ubuntu, update & upgrade terlebih dahulu.
+  ```
+  apt update && apt upgrade -y
+  ```
+- **install metasploit**: Langkah berikut nya install metasploit, tunggu sampai 15-30 menit tergantung speed internet.
+  ```
+  curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
+  ```
+- **install zipalign**: Langkah berikut nya install zipalign
+  ```
+  apt-get --purge remove zipalign #jika sudah pernah install zipalign kalau belum lewati bagian ini
+
+  git clone https://github.com/K1M4K-ID/fix-zipalign;cd fix-zipalign;chmod +x fix-zipalign.sh;bash fix-zipalign.sh
+  ```
+
+  ## selesai
+  selamat bersenang senang, installer by K1M4K-ID
+  
