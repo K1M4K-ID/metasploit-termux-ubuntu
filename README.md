@@ -37,5 +37,6 @@ How To Install Metasploit Termux Ubuntu
   ```
 
   ## selesai
+  ketik perintah msfvenom / msfconsole
   selamat bersenang senang, installer by K1M4K-ID
   
